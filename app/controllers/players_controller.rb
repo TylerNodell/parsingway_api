@@ -1,4 +1,6 @@
 class PlayersController < ApplicationController
+  # Reading players is public; create, update and destroy need the API token.
+  skip_before_action :require_api_token, only: %i[ index show ]
   before_action :set_player, only: %i[ show update destroy ]
 
   # GET /players
