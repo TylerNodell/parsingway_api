@@ -4,16 +4,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "~> 3.3.6"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.2", ">= 7.0.2.3"
-
-# Rails 7.0 test runner is not compatible with minitest 6
-gem "minitest", "~> 5.25"
+gem "rails", "~> 8.1.4"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+gem "sqlite3", "~> 2.9", ">= 2.9.6"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 5.0"
+gem "puma", "~> 8.0", ">= 8.0.2"
 
 # dotenv is used to read the .env file
 gem "dotenv", "~> 2.0"
